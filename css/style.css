@@ -1,0 +1,485 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #d46b00;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.opcions-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.logo-text {
+  font-family: 'K2D', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: white;
+  color: #d46b00;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* HERO SECTION */
+.registro {
+  background-image: url('../Fotos/Foto_pantalla_principal.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+.registro-texto {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.cta-button {
+  margin-top: 10px;
+  background-color: #d46b00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #a35000;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.login-btn:hover {
+  background-color: #fff3e0;
+  color: #a35000;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+}
+
+/* LOGIN, REGISTRO Y RECUPERARCONTRASEÑA */
+.pagina {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 300px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.forma-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fdf0e6;
+}
+
+.links {
+  text-align: right;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.botons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button, .register-button {
+  background-color: #d46b00;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* INFORMACIÓN */
+.informacion-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff7f0;
+  padding: 40px;
+  gap: 40px;
+}
+
+.info-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.login-btn {
+  background-color: white;
+  color: #d46b00;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #fff3e0;
+  color: #a35000;
+}
+
+/* MENÚ LATERAL */
+.sidebar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #d46b00;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: white;
+  color: #d46b00;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin-top: 350px;
+}
+
+.informacion-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 2.2;
+}
+
+.informacion-box h2, .informacion-box h3 {
+  color: #d46b00;
+  margin-bottom: 10px;
+}
+
+.informacion-box p {
+  margin-bottom: 20px;
+}
+
+/* SERVICIOS */
+.servicios-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff7f0;
+  padding: 40px;
+  gap: 200px;
+}
+
+.servi-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.servicios-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.servicios-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* CONTACTO */
+.contacto-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff7f0;
+  padding: 40px;
+  gap: 200px;
+}
+
+.contacto {
+  padding: 40px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto h2 {
+  color: #5a2d1c;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.formulario-contenedor {
+  background-color: #c4610e;
+  border-radius: 100px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: nowrap; /* Mantiene el contenedor en una fila */
+}
+
+.formulario-contacto {
+  flex: 1 1 100%;
+  min-width: 500px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-contacto label {
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+.formulario-contacto textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-contacto {
+  color: #fff;
+  font-weight: 500;
+  min-width: 200px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* TIENDA */
+.tienda-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff7f0;
+  padding: 40px;
+  gap: 200px;
+}
+
+.contenido-tienda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carrito-icono {
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  top: 2px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain; /* Ajusta imagen sin deformarla */
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.acciones button {
+  margin: 5px;
+  background-color: #ffa94d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detalle {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #aaa;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* CARRITO */
+.item-carrito {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-carrito img {
+  border-radius: 8px;
+}
+
+.cta-button-tienda {
+  background-color: white;
+  color: #d46b00;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 450px;
+}
